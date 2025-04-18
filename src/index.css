@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+    --color-main: #45C5CB;
+    --color-lite: #8AB7C5;
+    --color-common: #1C8696;
+    --color-second: #0D303A;
+    --color-dark: #041B22;
+    --font-gilroy: "Gilroy", sans-serif;
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./assets/Font/Gilroy-Regular.woff") format("woff"),
+        url("./assets/Font/Gilroy-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("./assets/Font/Gilroy-Bold.woff") format("woff"),
+        url("./assets/Font/Gilroy-Bold.woff2") format("woff2");
+}

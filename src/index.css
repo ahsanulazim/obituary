@@ -6,7 +6,7 @@
     --color-lite: #8AB7C5;
     --color-common: #1C8696;
     --color-second: #0D303A;
-    --color-dark: #041B22;
+    --color-silent: #041B22;
     --font-gilroy: "Gilroy", sans-serif;
 }
 
@@ -26,4 +26,18 @@
     font-display: swap;
     src: url("./assets/Font/Gilroy-Bold.woff") format("woff"),
         url("./assets/Font/Gilroy-Bold.woff2") format("woff2");
+}
+
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin-slow {
+    animation: spin-slow 10s linear infinite;
 }

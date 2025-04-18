@@ -20,7 +20,7 @@ const Navbar = () => {
         </li>
         <li><a className='hover:text-main hover:bg-transparent'>Plan & Pricing</a></li></>
     return (
-        <header className={`sticky min-[480px]:fixed max-[480px]:bg-dark drawer top-0 z-50 ${Scroll ? 'bg-dark shadow-md' : 'bg-transparent'
+        <header className={`sticky min-[480px]:fixed max-[480px]:bg-silent drawer top-0 z-50 ${Scroll ? 'bg-silent' : 'bg-transparent'
             }`}>
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">

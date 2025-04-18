@@ -1,5 +1,5 @@
 import Carousel from "./components/Carousel"
-import Header from "./components/Header"
+import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import Search from "./components/Search"
 import Video from "./components/Video"
@@ -14,6 +14,7 @@ function App() {
       <Carousel />
       <Video />
       <Search />
+      <Footer />
     </>
   )
 }

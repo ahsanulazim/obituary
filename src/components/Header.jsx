@@ -16,7 +16,7 @@ const Header = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const navItem = <><li><a href='/' className='hover:text-main hover:bg-transparent'>Home</a></li>
+    const navItem = <><li><a href='/obituary' className='hover:text-main hover:bg-transparent'>Home</a></li>
         <li>
             <a className='hover:text-main hover:bg-transparent'>Obituaries</a>
         </li>
@@ -37,7 +37,7 @@ const Header = () => {
                             {navItem}
                         </ul>
                     </div>
-                    <a className="" href="/"><img src={Logo} alt="Worldwide Obituary Logo" draggable="false" /></a>
+                    <a className="" href="/obituary"><img src={Logo} alt="Worldwide Obituary Logo" draggable="false" /></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 gap-x-3">

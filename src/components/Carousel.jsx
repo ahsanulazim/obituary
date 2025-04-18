@@ -3,7 +3,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination'
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import './Carousel.css'
 import image1 from '../assets/Images/carousel-1.webp';
 import image2 from '../assets/Images/carousel-2.webp';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";

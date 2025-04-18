@@ -28,8 +28,8 @@ const Header = () => {
             <div className='navbar max-w-[1380px] mx-auto max-[1380px]:px-4 p-0'>
                 <div className="navbar-start">
                     <div className="dropdown">
-                        <button tabIndex={0} role="button" className="flex items-center focus:bg-main focus:text-dark lg:hidden">
-                            <FaBarsStaggered />
+                        <button tabIndex={0} role="button" className="flex items-center focus:text-main lg:hidden mr-3">
+                            <FaBarsStaggered size={18} />
                         </button>
                         <ul
                             tabIndex={0}
@@ -37,10 +37,7 @@ const Header = () => {
                             {navItem}
                         </ul>
                     </div>
-                    <a className="hidden lg:block" href="/"><img src={Logo} alt="Worldwide Obituary Logo" draggable="false" /></a>
-                </div>
-                <div className="navbar-center lg:hidden flex">
-                    <a className="max-w-24 sm:max-w-28" href="/"><img src={Logo} alt="Worldwide Obituary Logo" draggable="false" /></a>
+                    <a className="" href="/"><img src={Logo} alt="Worldwide Obituary Logo" draggable="false" /></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 gap-x-3">

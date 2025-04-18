@@ -10,7 +10,7 @@ const Video = () => {
                     <div className="relative">
                         <img src={thumbnail} alt="video thumbnail" className="mx-auto" />
                         <h2 className="text-sm sm:text-xl md:text-3xl lg:text-5xl font-bold text-center absolute top-4 sm:top-10 left-1/2 translate-x-[-50%] w-full">Plan a Beautiful Personalized <br /> Digital Remembrance</h2>
-                        <button className=" rounded-full bg-main p-3 sm:p-6 absolute bottom-0 left-1/2 translate-x-[-50%] translate-y-[50%] cursor-pointer hover:bg-second">
+                        <button className=" rounded-full bg-main p-3 sm:p-6 absolute bottom-0 left-1/2 translate-x-[-50%] translate-y-[50%] cursor-pointer hover:bg-second z-10">
                             <FaPlay className="text-lg sm:text-xl" />
                         </button>
                     </div>

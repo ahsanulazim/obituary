@@ -1,5 +1,6 @@
 import Carousel from "./components/Carousel"
 import Header from "./components/Header"
+import Search from "./components/Search"
 import Video from "./components/Video"
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Carousel />
       <Video />
+      <Search />
     </>
   )
 }

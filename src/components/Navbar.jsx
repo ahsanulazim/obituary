@@ -20,7 +20,7 @@ const Navbar = () => {
         </li>
         <li><a className='hover:text-main hover:bg-transparent'>Plan & Pricing</a></li></>
     return (
-        <header className={`sticky min-[480px]:fixed max-[480px]:bg-dark drawer fixed top-0 z-50 ${Scroll ? 'bg-dark shadow-md' : 'bg-transparent'
+        <header className={`sticky min-[480px]:fixed max-[480px]:bg-dark drawer top-0 z-50 ${Scroll ? 'bg-dark shadow-md' : 'bg-transparent'
             }`}>
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
@@ -45,7 +45,7 @@ const Navbar = () => {
             </div>
             <div className="drawer-side z-20">
                 <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
-                <ul className="menu bg-base-200 min-h-full w-80 p-4">
+                <ul className="menu bg-base-200 min-h-full w-80 p-4 text-md">
                     {/* Sidebar content here */}
                     {navItem}
                 </ul>

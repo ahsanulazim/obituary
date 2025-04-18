@@ -4,7 +4,7 @@ import thumbnail from "../assets/Images/Video Thumbnail.png";
 
 const Video = () => {
     return (
-        <section className="bg-[#d5f0f2] py-32">
+        <section className="bg-[#d5f0f2] py-32 px-5">
             <div className="bg-main relative h-[600px]">
                 <div className=" absolute top-1/2 left-1/2 translate-[-50%] w-full">
                     <div className="relative">

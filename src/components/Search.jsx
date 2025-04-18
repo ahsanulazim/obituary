@@ -2,7 +2,7 @@
 
 const Search = () => {
     return (
-        <section className="bg-[url(src/assets/Images/bg-image.webp)] bg-cover bg-no-repeat relative py-16 px-4">
+        <section className="bg-[url(assets/Images/bg-image.webp)] bg-cover bg-no-repeat relative py-16 px-4">
             <h2 className="text-center text-3xl md:text-4xl font-bold mb-12"><span className="text-main">Search</span> Obituraies</h2>
             <form action="" className="text-center">
                 <div className="flex gap-4 max-w-2xl flex-wrap mx-auto justify-center">
@@ -36,7 +36,7 @@ const Search = () => {
                         <option value="2024">2024</option>
                     </select>
                 </div>
-                <button type="submit" className="btn btn-xl btn-wide bg-main border-0 mt-16 rounded-none">Search</button>
+                <button type="submit" className="btn btn-md sm:btn-xl btn-wide bg-main border-0 mt-16 rounded-none">Search</button>
             </form>
         </section>
     );

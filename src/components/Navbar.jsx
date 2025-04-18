@@ -38,7 +38,7 @@ const Navbar = () => {
                             {navItem}
                         </ul>
                     </div>
-                    <div className='navbar-end'>
+                    <div className='navbar-end mr-2'>
                         <button className="btn btn-sm md:btn-md md:px-7 md:py-6 bg-gradient-to-r from-main to-common hover:text-second">Recent Loss</button>
                     </div>
                 </div>

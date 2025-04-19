@@ -1,8 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination'
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import image1 from '../assets/Images/carousel-1.webp';
 import image2 from '../assets/Images/carousel-2.webp';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
@@ -17,8 +16,8 @@ const Carousel = () => {
             }} autoplay={{
                 delay: 2500,
                 disableOnInteraction: true,
-            }} pagination={true}
-                modules={[Navigation, Autoplay, Pagination]} className="mySwiper">
+            }}
+                modules={[Navigation, Autoplay]} className="mySwiper">
                 <SwiperSlide>
                     <div className={`bg-[url(assets/Images/carousel-1.webp)] bg-contain bg-no-repeat relative`}>
                         <img src={image1} alt="" className="invisible" />

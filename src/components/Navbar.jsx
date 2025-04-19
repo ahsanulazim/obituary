@@ -1,6 +1,7 @@
 import { FaBarsStaggered } from 'react-icons/fa6';
 import Logo from '../assets/Images/Logo-Dark.svg'
 import { useEffect, useState } from 'react';
+import { Link, NavLink } from 'react-router';
 
 const Navbar = () => {
     const [Scroll, setScroll] = useState(false);
@@ -14,11 +15,11 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const navItem = <><li><a href='/obituary' className='hover:text-main hover:bg-transparent'>Home</a></li>
+    const navItem = <><li><NavLink to="/obituary/" className='hover:text-main hover:bg-transparent'>Home</NavLink></li>
         <li>
             <a className='hover:text-main hover:bg-transparent'>Obituaries</a>
         </li>
-        <li><a className='hover:text-main hover:bg-transparent'>Plan & Pricing</a></li></>
+        <li><NavLink to="/plan" className='hover:text-main hover:bg-transparent active:text-main'>Plan & Pricing</NavLink></li></>
     return (
         <header className={`sticky min-[480px]:fixed max-[480px]:bg-silent drawer top-0 z-50 ${Scroll ? 'bg-silent' : 'bg-transparent'
             }`}>
@@ -31,7 +32,7 @@ const Navbar = () => {
                             <FaBarsStaggered size={18} />
                         </label>
                     </div>
-                    <div className="mx-2 navbar-start"><a className="" href="/obituary"><img src={Logo} alt="Worldwide Obituary Logo" draggable="false" /></a></div>
+                    <div className="mx-2 navbar-start"><Link to="/obituary/"><img src={Logo} alt="Worldwide Obituary Logo" draggable="false" /></Link></div>
                     <div className="hidden flex-none lg:block navbar-center">
                         <ul className="menu menu-horizontal">
                             {/* Navbar menu content here */}

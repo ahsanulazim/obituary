@@ -1,9 +1,8 @@
-import Carousel from "./components/Carousel"
+import { Route, Routes } from "react-router"
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
-import Plan from "./components/Plan"
-import Search from "./components/Search"
-import Video from "./components/Video"
+import Home from "./components/Home"
+import PlanandPricing from "./components/PlanandPricing"
 
 function App() {
 
@@ -11,11 +10,10 @@ function App() {
   return (
     <>
       <Navbar />
-
-      <Carousel />
-      <Video />
-      <Search />
-      <Plan />
+      <Routes>
+        <Route path="obituary" element={<Home />} />
+        <Route path="plan" element={<PlanandPricing />} />
+      </Routes>
       <Footer />
     </>
   )
